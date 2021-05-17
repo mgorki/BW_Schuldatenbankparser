@@ -74,13 +74,13 @@ while Typindex >= 0:
     disch_lst = []
 
     with f:
-        fnames = ['Name', 'EMail', 'Telefon', 'Ort']
+        fnames = ['Name', 'EMail', 'Telefon', 'Ort', 'DISCH']
         writer = csv.DictWriter(f, fieldnames=fnames) 
         writer.writeheader()
-        writer.writerow({'Name' : "*************", 'Ort': "*************", 'Telefon': "*************", 'EMail': "*************"})
+        writer.writerow({'Name' : "*************", 'Ort': "*************", 'Telefon': "*************", 'EMail': "*************", 'DISCH': "*************"})
         if not Schultyp == []:
             writer.writerow({'Name' : Schultyp[Typindex], 'Ort': Schultyp[Typindex], 'Telefon': Schultyp[Typindex], 'EMail': Schultyp[Typindex]})
-        writer.writerow({'Name' : "*************", 'Ort': "*************", 'Telefon': "*************", 'EMail': "*************"})
+        writer.writerow({'Name' : "*************", 'Ort': "*************", 'Telefon': "*************", 'EMail': "*************", 'DISCH': "*************"})
 
 
         for key in resp1_dict:
@@ -125,9 +125,13 @@ while Typindex >= 0:
             except:
                 S_Ort = "---"
                 S_Ort = resp_data['DIORT']
+            try:
+                print("DISCH: " + disch_nr)
+            except:
+                print("Fatal error: no DISCH!")
 
             if not disch_nr in EXCLUDED:
-                writer.writerow({'Name' : S_Name, 'EMail': S_Mail, 'Telefon': S_Tel, 'Ort': S_Ort})
+                writer.writerow({'Name' : S_Name, 'EMail': S_Mail, 'Telefon': S_Tel, 'Ort': S_Ort, 'DISCH': disch_nr})
     
     f = open(str(Speicherpfad), 'a')
     f.write
