@@ -62,7 +62,7 @@ while Typindex >= 0:
     resp1_data = resp1_data['Rows']
 
     #print(resp1_data)
-    print(type(resp1_data))
+    #print(type(resp1_data))
 
     ## converting list resp1_data to enumerated dict ##
     def enum_dict(lst):
