@@ -18,7 +18,7 @@
         os
         PySimpleGUI
 
-1.2.1   Sofern die erforderlichen Module nicht bereits installiert sind wird empfohlen, sie mittels der pip-Paketverwaltung zu installieren.
+1.2.1   Sofern die erforderlichen Module nicht bereits installiert sind wird empfohlen, sie z.B. mittels der pip-Paketverwaltung zu installieren.
         Diese ist bei den meisten Python Installationen bereits enthalten (falls nicht siehe: https://pip.pypa.io/en/stable/installing/).
         Pip wird über die Befehlszeile des Betriebssystems aufgerufen (z.B. Windows zu erreichen über: Start -> Eingabeaufforderung).
         Zur Installation der notwendigen Module folgendes in die Befehlszeile eingeben und "Enter" drücken:
