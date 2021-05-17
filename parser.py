@@ -1,4 +1,4 @@
-### Schulenfinder BW - Version 0.2 ### 
+### Schulenfinder BW - Version 0.7 ### 
 
 import urllib.request
 import urllib.parse
