@@ -11,7 +11,6 @@ import orte
 
 version = "0.7"
 
-
 Suchparameter = Fenster.ChooseSearchtype(version)
 print(Suchparameter)
 
